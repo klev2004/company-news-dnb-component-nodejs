@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "dunsnumber": {
+      "type": "string",
+      "required": true,
+      "title": "DUNSNumber"
+    },
+    "organizationname": {
+      "type": "string",
+      "required": true,
+      "title": "Organization Name"
+    },
+    "address": {
+      "type": "object",
+      "required": true,
+      "title": "Address",
+      "properties": {
+        "countryiso": {
+          "type": "string",
+          "required": true,
+          "title": "Country ISO"
+        },
+        "city": {
+          "type": "string",
+          "required": true,
+          "title": "City"
+        },
+		"streetaddress": {
+		  "type": "string",
+		  "required": true,
+		  "title": "Street Address"
+		}
+      }
+    }
+  }
+}

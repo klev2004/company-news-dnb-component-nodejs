@@ -1,0 +1,26 @@
+{
+  "title": "Dun & Bradstreet component (Node.js)",
+  "description": "elastic.io component for the Dun & Bradstreet API",
+  "docsUrl": "https://docs.dnb.com/direct/2.0/en-US/newsandmedia/latest/orderproduct/news-soap-API#ProductRequest",
+  "credentials": {
+    "fields": {
+      "apiKey": {
+        "label": "API key",
+        "required": true,
+        "viewClass": "TextFieldWithNoteView",
+        "note": "Please use your own API key. For more details see <a href='https://developer.dnb.com/register-v2' target='_blank'>Dun & Bradstreet API docs</a>."
+      }
+    }
+  },
+  "triggers": {},
+  "actions": {
+    "companyNews": {
+      "main": "./lib/actions/getCompanyNews.js",
+      "title": "Returns news items for a given D-U-N-S Number",
+      "metadata": {
+        "in": "./lib/schemas/getCompanyNews.in.json",
+        "out": "./lib/schemas/getCompanyNews.out.json"
+      }
+    }
+  }
+}

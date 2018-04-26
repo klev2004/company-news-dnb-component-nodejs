@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "dunsnumber": {
+      "type": "string",
+      "required": true,
+      "title": "DUNSNumber"
+    }
+  }
+}
