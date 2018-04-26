@@ -12,7 +12,6 @@
       }
     }
   },
-  "triggers": {},
   "actions": {
     "companyNews": {
       "main": "./lib/actions/getCompanyNews.js",
