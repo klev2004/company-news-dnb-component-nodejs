@@ -4,11 +4,17 @@
   "docsUrl": "https://docs.dnb.com/direct/2.0/en-US/newsandmedia/latest/orderproduct/news-soap-API#ProductRequest",
   "credentials": {
     "fields": {
-      "apiKey": {
-        "label": "API key",
+      "username": {
+        "label": "Username",
         "required": true,
-        "viewClass": "TextFieldWithNoteView",
-        "note": "Please use your own API key. For more details see <a href='https://developer.dnb.com/register-v2' target='_blank'>Dun & Bradstreet API docs</a>."
+        "viewClass": "TextFieldView",
+        "note": "Please use your own Username. For more details see <a href='https://developer.dnb.com/register-v2' target='_blank'>Dun & Bradstreet API docs</a>."
+      },
+      "password": {
+        "label": "Password",
+        "required": true,
+        "viewClass": "PasswordFieldView",
+        "note": "Please use your own Password. For more details see <a href='https://developer.dnb.com/register-v2' target='_blank'>Dun & Bradstreet API docs</a>."
       }
     }
   },
